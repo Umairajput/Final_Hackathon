@@ -5,8 +5,72 @@
   --brightGray: #e9ebee;
   --mainColor: #007EFD;
   --darkGray: #383e45;
+  --lightGray: rgb(226, 221, 221);
+  --Gray: gray;
   --yellow: #ffb400;
   --Dark_blue: #005AB4;
   --Light_blue: #007EFD;
   --main_linear_gradient: linear-gradient(129deg, rgba(0, 126, 253, 1) 30%, rgba(0, 90, 180, 1) 50%);
+}
+/* navbar_styling */
+
+.MuiPaper-root,
+.MuiPaper-elevation,
+.MuiPaper-elevation4,
+.MuiAppBar-root,
+.MuiAppBar-colorPrimary,
+.MuiAppBar-positionStatic,
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--white) !important;
+}
+
+.navbar_icon {
+  color: var(--black) !important;
+}
+
+/* admin add item */
+
+.camera_main_div{
+  width: 70%;
+  height: 40vh;
+  margin: auto;
+  border-radius: 10px;
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* .admin_camera{
+  width: 280px;
+  height: 280px;
+} */
+.Add_item_heading{
+  color: var(--Dark_blue);
+  margin-left: 15%;
+}
+.camera_icon{
+  font-size: 200px !important;
+  color: var(--Gray) !important;
+}
+.inputs_div{
+  width: 70%;
+  margin: 20px auto;
+}
+.inp{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--lightGray);
+  font-size: 20px;
+}
+.inp:focus{
+  outline: none;
+}
+.inp::placeholder{
+  padding-left: 10px;
+  font-size: 20px;
 }
