@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Grocery from '../../Assets/Images/grocery.png'
 import SearchIcon from '@mui/icons-material/Search';
@@ -7,6 +7,8 @@ import vegetable from '../../Assets/Images/vegetable.png'
 import meat from '../../Assets/Images/meat.jpeg'
 import AddIcon from '@mui/icons-material/Add';
 import { UserFooter } from '../../Components/index'
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { db } from '../../Firebase/firebase';
 function UserHome() {
   let data = [{
     img: { meat },
@@ -23,6 +25,17 @@ function UserHome() {
   const add = () => {
     alert('add')
   }
+  const getData = async() => {
+    const q = query(collection(db, "Products"));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, " => ", doc.data());
+    });
+  }
+  useEffect(() => {
+    getData()
+  })
   return (
     <>
       <div className="user_home_page_main_section">
