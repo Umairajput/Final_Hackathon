@@ -40,7 +40,7 @@
 }
 
 .log_saylani_Store>img {
-  width: auto;
+  width: 79%;
 
 }
 
@@ -381,7 +381,7 @@
   /* padding: 10px 5px 10px 5px; */
   border-radius: 20px;
   color: var(--white);
-  margin-left: 20px;
+  margin-left: 6px;
 }
 
 /* Shopping  */
@@ -486,9 +486,10 @@
 }
 
 .order_button_div {
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-left: 50px; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .order_button {
