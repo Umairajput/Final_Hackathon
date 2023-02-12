@@ -212,6 +212,7 @@
 .camera_icon {
   font-size: 200px !important;
   color: var(--Gray) !important;
+  margin-left: 20px;
 }
 
 .inputs_div {
