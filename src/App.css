@@ -15,6 +15,7 @@
   --blue: #024F9D;
   --main_linear_gradient: linear-gradient(129deg, rgba(0, 126, 253, 1) 30%, rgba(0, 90, 180, 1) 50%);
 }
+
 /* get Started  */
 .getStarted_main_div {
   text-align: center;
@@ -259,4 +260,77 @@
 
 .unit_inp {
   width: 70%;
+}
+
+/* Admin_Home */
+
+.admin_home_div {
+  margin: auto 5%;
+}
+
+.admin_home_div h3 {
+  color: var(--Light_blue);
+  font-size: 25px;
+}
+
+.product_card_div {
+  display: flex;
+}
+
+.card_main_div {
+  border: 1px solid var(--mainGreen);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_main_div {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.product_rate {
+  color: var(--Gray);
+  margin: 0px 0px 0px 4px;
+}
+
+.product_name {
+  color: var(--mainGreen);
+  font-weight: 600;
+  font-size: 20px;
+  margin: 5px 0px 3px 0px;
+}
+
+.card_main_div .card_img {
+  width: 140px;
+  height: auto;
+}
+
+.product_cost {
+  margin: auto;
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--Gray);
+}
+
+/* footer */
+
+.footer_main_div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 10px;
+}
+
+.footer_main_div div {
+  color: var(--Gray) !important;
+}
+
+.footer_inner_div p {
+  margin: 0px;
+}
+
+.footer_inner_div {
+  display: block;
+  text-align: center;
 }
