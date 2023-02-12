@@ -49,7 +49,7 @@ const Login = () => {
             <MarkunreadIcon className='form_icon' />
           </div>
           <div className="div">
-            <input type="Email" className="input" placeholder=' Enter Email'
+            <input required type="Email" className="input" placeholder=' Enter Email'
               value={email} onChange={(e) => {
                 setEmail(e.target.value)
                 console.log(e.target.value)
@@ -63,7 +63,7 @@ const Login = () => {
             <VisibilityOffIcon className='form_icon' />
           </div>
           <div className="div">
-            <input type="password" className="input" placeholder='Enter Password'
+            <input required type="password" className="input" placeholder='Enter Password'
               value={password} onChange={(e) => {
                 setPassword(e.target.value)
                 console.log(e.target.value)

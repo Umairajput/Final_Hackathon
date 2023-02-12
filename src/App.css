@@ -335,6 +335,7 @@
 }
 
 /* description */
+
 .categery_description {
   margin-top: 50px;
  
@@ -430,6 +431,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 /* Admin_Home */
 
 .admin_home_div {
@@ -572,4 +574,8 @@
 .footer_inner_div {
   display: block;
   text-align: center;
+}
+
+.active{
+ color: var(--mainGreen) !important;
 }
