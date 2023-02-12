@@ -212,7 +212,7 @@
 .camera_icon {
   font-size: 200px !important;
   color: var(--Gray) !important;
-  margin-left: 20px;
+  margin-left: -30px;
 }
 
 .inputs_div {
@@ -596,7 +596,7 @@
 }
 
 .card_main_div .card_img {
-  width: 140px;
+  width: 100px;
   height: auto;
 }
 
@@ -685,6 +685,10 @@
   display: flex;
   justify-content: space-evenly;
   margin: 10px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
 }
 
 .footer_main_div div {

@@ -62,7 +62,7 @@ function AdminAddProducts() {
               onChange={onChange}
               onPreview={onPreview}
             >
-              {fileList.length < 5 && <div style={{ width: '0' }}><CameraAltIcon className='camera_icon' /></div>}
+              {fileList.length < 1 && <div style={{ width: '0' }}><CameraAltIcon className='camera_icon' /></div>}
             </Upload>
           </ImgCrop>
         </div>

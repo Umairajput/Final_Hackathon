@@ -36,12 +36,12 @@ function UserHome() {
       // const itemName = doc.data()?.ItemName
       // const imageUrl = doc.data()?.ImageUrl
       // const price = doc.data()?.UnitPrice
-      let getData = localStorage.setItem("data",JSON.stringify(doc.data()))
-      // setData([...data, {
-      //   itemName: doc.data()?.ItemName,
-      //   imageUrl: doc.data()?.ImageUrl,
-      //   price: doc.data()?.UnitPrice
-      // }])
+      // let getData = localStorage.setItem("data",JSON.stringify(doc.data()))
+      setData([...data, {
+        itemName: doc.data()?.ItemName,
+        imageUrl: doc.data()?.ImageUrl,
+        price: doc.data()?.UnitPrice
+      }])
     });
   }
   console.log("data==>", data)
@@ -116,24 +116,6 @@ function UserHome() {
 
 
 
-
-          {/* <div className="categery_description">
-            <div className="cateries">
-              <div className="cateries_image"><img src={meat} alt="" /></div>
-              <div className="Description">
-                <h1>Meat</h1>
-                <p>This is product description </p>
-                   <p> This is abc product description</p>
-
-
-              </div>
-              <div className="categries_button">
-              <p>RS.800-per Kg</p>
-                <button ><AddIcon/></button>
-              </div>
-            </div>
-
-          </div> */}
 
         </div>
         <UserFooter />
