@@ -57,7 +57,26 @@ function UserHome() {
 
               </div>
               <div className="categries_button">
-              <b>RS.800-per Kg</b>
+              <p>RS.800-per Kg</p>
+                <button><AddIcon/></button>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div className="categery_description">
+            <div className="cateries">
+              <div className="cateries_image"><img src={meat} alt="" /></div>
+              <div className="Description">
+                <h1>Meat</h1>
+                <p>This is product description </p>
+                   <p> This is abc product description</p>
+
+
+              </div>
+              <div className="categries_button">
+              <p>RS.800-per Kg</p>
                 <button><AddIcon/></button>
               </div>
             </div>
