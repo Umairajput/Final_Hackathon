@@ -29,13 +29,7 @@ const SignUp = () => {
                     number: number,
                     id: id
                 });
-                sendEmailVerification(auth.currentUser)
-                    .then(() => {
-                        alert('VERIFICATION SENT SUCCESSFULLY TO YOUR GMAIL ACCOUNT .. !')
-                        navigate('/login')
-                    })
-                    .catch((err) => console.log(err));
-                alert("SignUp success");
+                navigate('/login')
             })
             .catch((error) => {
                 const errorCode = error.code;

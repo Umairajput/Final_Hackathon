@@ -96,7 +96,10 @@ function UserShoppingCart() {
         <div className="order_button_div">
           <button className='order_button'> <Link to=''className='link'  > Place Order</Link> </button>
         </div>
-
+        <br />
+      <br />
+      <br />
+      <br />
       </div>
       <UserFooter />
 

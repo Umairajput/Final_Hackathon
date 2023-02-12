@@ -92,6 +92,10 @@ function AdminAddProducts() {
           <button className='get_Started_button' style={{ color: 'white' }} onClick={AddProduct}>Add Product</button>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </div >
   )

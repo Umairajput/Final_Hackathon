@@ -68,6 +68,10 @@ function AdminProfile() {
       <div className="signup_button_div" style={{ margin: '20px auto', textAlign: 'center' }}>
         <button className='get_Started_button' style={{ color: 'white' }}>Logout</button>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </div>
   )
