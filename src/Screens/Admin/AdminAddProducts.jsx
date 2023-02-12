@@ -46,6 +46,7 @@ function AdminAddProducts() {
       setDescription('')
       setUnitName('')
       setPrice('')
+      alert('Add Product Successfull')
   }
   return (
     <div>
