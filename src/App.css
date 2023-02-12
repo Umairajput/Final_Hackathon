@@ -260,3 +260,14 @@
 .unit_inp {
   width: 70%;
 }
+
+/* profile setting css */
+
+.profile_main_div{
+  width: 100%;
+  text-align: center;
+}
+.profile_img{
+  width: 200px;
+  height: 200px;
+}

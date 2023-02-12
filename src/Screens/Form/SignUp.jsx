@@ -25,8 +25,7 @@ const SignUp = () => {
                         <AccountCircleIcon className='form_icon' />
                     </div>
                     <div className="div">
-                        <input type="text" className="input name_inp" placeholder='Enter Your Name'
-
+                        <input type="text" className="input" placeholder='Enter Your Name'
                             value={name} onChange={(e) => {
                                 setName(e.target.value)
                                 console.log(e.target.value)
@@ -34,7 +33,6 @@ const SignUp = () => {
                         />
                     </div>
                 </div>
-
                 <div className="input-div one">
                     <div className="i">
                         <WifiCallingIcon className='form_icon' />
