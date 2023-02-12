@@ -65,6 +65,9 @@ function AdminAddProducts() {
             <span style={{color:'blue',fontSize:'25px'}}>Unit Price:</span>
             <input type="text" className='inp unit_inp' placeholder='Pkr' />
         </div>
+        <div className="signup_button_div" style={{margin:'20px auto',textAlign:'center'}}>
+          <button className='get_Started_button' style={{color:'white'}}>Add Product</button>
+        </div>
       </div>
     </div>
   )
