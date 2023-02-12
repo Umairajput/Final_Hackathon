@@ -1,11 +1,20 @@
 :root {
   --white: white;
   --black: black;
+  --lightGrey: #f3f0ec;
+  --brightGray: #e9ebee;
+  --mainColor: #007EFD;
+  --darkGray: #383e45;
+  --lightGray: rgb(226, 221, 221);
+  --Gray: gray;
+  --grey: #D4D3D3;
+  --yellow: #ffb400;
+  --Dark_blue: #005AB4;
+  --Light_blue: #007EFD;
   --mainGreen: #61B846;
   --blue: #024F9D;
-  --grey: #D4D3D3
+  --main_linear_gradient: linear-gradient(129deg, rgba(0, 126, 253, 1) 30%, rgba(0, 90, 180, 1) 50%);
 }
-
 /* get Started  */
 .getStarted_main_div {
   text-align: center;
@@ -115,8 +124,8 @@
 .input {
   border: none;
   margin-left: 10px;
-  border-bottom: 1px solid var(--grey);
   width: 230px;
+  border-bottom: 1px solid var(--grey) !important;
 }
 
 .input:focus {
@@ -157,17 +166,8 @@
 
 .already_account {
   color: var(--blue);
-  --lightGrey: #f3f0ec;
-  --brightGray: #e9ebee;
-  --mainColor: #007EFD;
-  --darkGray: #383e45;
-  --lightGray: rgb(226, 221, 221);
-  --Gray: gray;
-  --yellow: #ffb400;
-  --Dark_blue: #005AB4;
-  --Light_blue: #007EFD;
-  --main_linear_gradient: linear-gradient(129deg, rgba(0, 126, 253, 1) 30%, rgba(0, 90, 180, 1) 50%);
 }
+
 /* navbar_styling */
 
 .MuiPaper-root,
@@ -188,7 +188,7 @@
 
 /* admin add item */
 
-.camera_main_div{
+.camera_main_div {
   width: 70%;
   height: 40vh;
   margin: auto;
@@ -197,25 +197,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
-/* .admin_camera{
-  width: 280px;
-  height: 280px;
-} */
-.Add_item_heading{
+
+.Add_item_heading {
   color: var(--Dark_blue);
   margin-left: 15%;
 }
-.camera_icon{
+
+.camera_icon {
   font-size: 200px !important;
   color: var(--Gray) !important;
 }
-.inputs_div{
+
+.inputs_div {
   width: 70%;
   margin: 20px auto;
 }
-.inp{
+
+.inp {
   width: 100%;
   height: 50px;
   border-radius: 10px;
@@ -223,33 +223,40 @@
   background-color: var(--lightGray);
   font-size: 20px;
 }
-.inp:focus{
+
+.inp:focus {
   outline: none;
 }
-.inp::placeholder{
+
+.inp::placeholder {
   padding-left: 10px;
   font-size: 20px;
 }
-.text_area{
+
+.text_area {
   width: 100%;
   border-radius: 10px;
   border: none;
   background-color: var(--lightGray);
   font-size: 20px;
 }
-.text_area:focus{
+
+.text_area:focus {
   outline: none;
 }
-.text_area::placeholder{
+
+.text_area::placeholder {
   padding-left: 10px;
   font-size: 20px;
 }
-.unit_name_div{
+
+.unit_name_div {
   width: 70%;
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
 }
-.unit_inp{
+
+.unit_inp {
   width: 70%;
 }
