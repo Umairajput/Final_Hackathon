@@ -6,6 +6,7 @@ import ShopGrocery from '../../Assets/Images/shop_grocery.jpeg'
 import vegetable from '../../Assets/Images/vegetable.png'
 import meat from '../../Assets/Images/meat.jpeg'
 import AddIcon from '@mui/icons-material/Add';
+import { UserFooter } from '../../Components/index'
 function UserHome() {
   return (
     <>
@@ -64,7 +65,7 @@ function UserHome() {
           </div>
 
         </div>
-
+        <UserFooter/>
       </div>
     </>
   )
