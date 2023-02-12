@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import axios from "axios";
-import logo from './logo.svg';
 import './App.css';
-import { SignUp } from './Screens';
+import Router from "./Config/routes";
 function App() {
  
     return (
       <div>
-        <SignUp/>
+        <Router/>
       </div>
         
 
