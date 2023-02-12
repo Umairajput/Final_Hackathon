@@ -5,7 +5,7 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import { Upload } from 'antd';
 import ImgCrop from 'antd-img-crop';
 import fruits from '../../Assets/Images/fruits.png'
-import { UserFooter } from '../../Components/index'
+import { Order, UserFooter } from '../../Components/index'
 
 function UserProfile() {
   const [fileList, setFileList] = useState([]);
@@ -40,6 +40,7 @@ function UserProfile() {
           <input type="text" className="input" placeholder='Update Your Name' />
         </div>
       </div>
+      <Order/>
       <div className="signup_button_div" style={{ margin: '20px auto', textAlign: 'center' }}>
         <button className='get_Started_button' style={{ color: 'white' }}>Logout</button>
       </div>
