@@ -16,7 +16,7 @@ function Footer() {
                 <p> Items </p>
             </div>
             </Link>
-            <Link to='/admin/prfile'> <div className="footer_inner_div">
+            <Link to='/admin/profile/setting'> <div className="footer_inner_div">
                 <Person2Icon />
                 <p> Account </p>
             </div>
