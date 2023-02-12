@@ -7,7 +7,7 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Link,useNavigate } from 'react-router-dom'
 import { initializeApp } from "firebase/app";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
-import { getAuth, signInWithEmailAndPassword,sendEmailVerification } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { async } from "q";
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -17,27 +17,22 @@ const Login = () => {
   const LoginForm = () => {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
-      .then(async (userCredential) => {
-        const user = userCredential.user;
-        // console.log(user)
-        if (!user.emailVerified) {
-          // console.log("Document data:", docSnap.data());
-          // dispatch(LoginUserData(docSnap.data()))
-          sendEmailVerification(auth.currentUser)
-                    .then(() => {
-              alert('VERIFICATION SENT SUCCESSFULLY TO YOUR GMAIL ACCOUNT .. !')
+        .then(async (userCredential) => {
+            const user = userCredential.user;
+            // console.log(user)
+            const docRef = doc(db, "users", user.uid);
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists()) {
+                navigate('/user/home/page')
+            } else {
+                console.log("No such document!");
+            }
         })
-        .catch((err) => console.log(err));
-                alert( "SignUp success");
-        } else {
-          navigate('/user/home/page')
-        }
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-      });
-  }
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        });
+}
   const adminLogin = async() => {
     const docRef = doc(db, "Admin", "2n2FnC6ZYOuDIYfQaO4W");
   const docSnap = await getDoc(docRef);
