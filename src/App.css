@@ -271,3 +271,13 @@
   width: 200px;
   height: 200px;
 }
+.category_div{
+  width: 70%;
+  height: 15vh;
+  margin: auto;
+  border-radius: 10px;
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
