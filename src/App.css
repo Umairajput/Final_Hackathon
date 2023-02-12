@@ -698,8 +698,9 @@
 .footer_inner_div {
   display: block;
   text-align: center;
+  text-decoration: none;
 }
 
-.active{
- color: var(--mainGreen) !important;
+.active {
+  color: var(--mainGreen) !important;
 }
