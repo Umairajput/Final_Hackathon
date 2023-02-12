@@ -19,9 +19,8 @@ function AdminHome() {
           </div>
           <p className='product_cost'>$2.1</p>
         </div>
-
       </div>
-      <Footer />
+      <Footer/>
     </div>
   )
 }

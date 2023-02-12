@@ -4,6 +4,7 @@ import camera_img from '../../Assets/Images/camera_img.png'
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import { Upload } from 'antd';
 import ImgCrop from 'antd-img-crop';
+import {Footer} from '../../Components/index'
 function AdminAddProducts() {
   const [fileList, setFileList] = useState([]);
   const onChange = ({ fileList: newFileList }) => {
@@ -69,6 +70,7 @@ function AdminAddProducts() {
           <button className='get_Started_button' style={{color:'white'}}>Add Product</button>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
