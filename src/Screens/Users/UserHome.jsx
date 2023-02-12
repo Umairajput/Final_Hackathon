@@ -33,10 +33,18 @@ function UserHome() {
     querySnapshot.forEach((doc) => {
       // console.log(doc.id, " => ", doc.data());
       // data = doc.data()
-      setData([...data,{doc?.data()}])
+      // const itemName = doc.data()?.ItemName
+      // const imageUrl = doc.data()?.ImageUrl
+      // const price = doc.data()?.UnitPrice
+      let getData = localStorage.setItem("data",JSON.stringify(doc.data()))
+      // setData([...data, {
+      //   itemName: doc.data()?.ItemName,
+      //   imageUrl: doc.data()?.ImageUrl,
+      //   price: doc.data()?.UnitPrice
+      // }])
     });
   }
-  // console.log("data==>", data)
+  console.log("data==>", data)
   useEffect(() => {
     getData()
   }, [])
@@ -79,22 +87,22 @@ function UserHome() {
           </div>
 
 
-          {/* {
+          {
             data?.map((v, i) => {
               return (
                 <>
                   <div className="categery_description">
                     <div className="cateries">
-                      <div className="cateries_image"><img src={v?.ImageUrl} alt="" /></div>
+                      <div className="cateries_image"><img src={v?.imageUrl} alt="" /></div>
                       <div className="Description">
-                        <h1>{v?.ItemName}</h1>
+                        <h1>{v?.itemName}</h1>
                         <p>This is product description </p>
                         <p> This is abc product description</p>
 
 
                       </div>
                       <div className="categries_button">
-                        <p>{v?.UnitPrice}</p>
+                        <p>{v?.price}</p>
                         <buttono onClick={add} ><AddIcon /></buttono>
                       </div>
                     </div>
@@ -103,7 +111,7 @@ function UserHome() {
                 </>
               )
             })
-          } */}
+          }
 
 
 
