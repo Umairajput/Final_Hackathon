@@ -2,6 +2,8 @@ import React from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import Person2Icon from '@mui/icons-material/Person2';
+import { Link } from 'react-router-dom'
+
 function Footer() {
     return (
         <div className="footer_main_div">
@@ -15,7 +17,7 @@ function Footer() {
                 <p> Items </p>
             </div>
             </Link>
-            <Link to='/admin/prfile'> <div className="footer_inner_div">
+            <Link to='/admin/profile/setting'> <div className="footer_inner_div">
                 <Person2Icon />
                 <p> Account </p>
             </div>
