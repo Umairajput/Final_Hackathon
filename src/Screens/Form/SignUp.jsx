@@ -5,14 +5,35 @@ import WifiCallingIcon from '@mui/icons-material/WifiCalling';
 import MarkunreadIcon from '@mui/icons-material/Markunread';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Link } from 'react-router-dom'
+import { db, auth } from '../../Firebase/firebase';
+import { doc, setDoc } from "firebase/firestore";
+import { createUserWithEmailAndPassword } from "firebase/auth"
 
 const SignUp = () => {
     // const [value, setValue] = useState()
-    const [name, setName] = useState("")
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
-    const [number, setNumber] = useState('')
+    const [number, setNumber] = useState()
     const [password, setPassword] = useState('')
-
+    const Register = () => {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(async (userCredential) => {
+                const user = userCredential.user;
+                const id = user.uid
+                await setDoc(doc(db, 'users', user.uid), {
+                    name: name,
+                    email: email,
+                    password: password,
+                    number: number,
+                    id: id
+                });
+                alert("Good job!", "SignUp", "success");
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            });
+    }
         return (
         <>
             <div className="Signup_form">
@@ -78,7 +99,7 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="get_Started_button_div">
-                    <button className='get_Started_button'> <Link to='/login' className='link'  > Sign Up</Link> </button>
+                    <button className='get_Started_button' onClick={Register}> <Link to='/login' className='link' > Sign Up</Link> </button>
                     <p className="already_account"> <Link to='/login' className='link_login' >Already Have an account? Login</Link> </p></div>
 
             </div>

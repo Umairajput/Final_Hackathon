@@ -24,7 +24,6 @@ function AdminAddProducts() {
     const imgWindow = window.open(src);
     imgWindow?.document.write(image.outerHTML);
   };
-
   return (
     <div>
       <Navbar />
