@@ -482,6 +482,78 @@
   color: var(--Gray);
 }
 
+/*Admin Order*/
+
+.admin_order_main_div {
+  margin-left: 30px;
+}
+
+.order_h3 {
+  color: var(--blue);
+}
+
+.order_inner_div {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 50px;
+  width: auto;
+}
+
+.user_name {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.order_inner_div h3,
+.order_inner_div p {
+  margin: 0px;
+}
+
+.status_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status_div p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.item_name_div {
+  margin-top: 10px;
+}
+
+.item_name_div p {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--Gray);
+}
+
+.items_total_div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.item_price {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--mainGreen);
+}
+
+.inputs_div2 {
+  margin-top: 10px;
+  border-bottom: 2px solid var(--Gray);
+  height: 50px;
+}
+
+.select_inp {
+  height: 37px;
+  border-radius: 22px;
+  font-weight: 500 !important;
+  color: var(--Gray) !important;
+}
+
 /* footer */
 
 .footer_main_div {
