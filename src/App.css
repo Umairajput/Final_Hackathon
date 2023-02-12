@@ -337,11 +337,14 @@
 /* description */
 .categery_description {
   margin-top: 50px;
+ 
+
 }
 
 .cateries {
   display: flex;
   justify-content: space-evenly;
+ 
 }
 
 .cateries_image>img {
@@ -355,7 +358,9 @@
   margin-left: 10px;
   font-size: 10px;
 }
-
+.Description > p{
+  width: 150px;
+}
 .categries_button {
   margin-top: -20px;
 }
@@ -363,7 +368,6 @@
 .categries_button>p {
   font-weight: bold;
   font-size: 15px;
-  background-color: #61B846;
 }
 
 .categries_button>button {
@@ -371,11 +375,10 @@
   border: none;
   width: auto;
   /* padding: 10px; */
-  padding: 10px 10px 10px 10px;
+  /* padding: 10px 5px 10px 5px; */
   border-radius: 20px;
   color: var(--white);
-  margin-left: 80px;
-  margin-top: 30px;
+  margin-left: 20px;
 }
 
 .text_area {
