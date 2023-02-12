@@ -27,7 +27,6 @@ import { Routes, Route } from 'react-router-dom'
 
 const Router = () => {
     let getLocation = window?.location?.pathname
-    console.log('get',getLocation)
     return (
             <Routes>
                 <Route path={HOME} element={<Home />}></Route>
