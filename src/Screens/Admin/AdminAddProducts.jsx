@@ -4,6 +4,7 @@ import camera_img from '../../Assets/Images/camera_img.png'
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import { Upload } from 'antd';
 import ImgCrop from 'antd-img-crop';
+import {Footer} from '../../Components/index'
 function AdminAddProducts() {
   const [fileList, setFileList] = useState([]);
   const onChange = ({ fileList: newFileList }) => {
@@ -23,7 +24,6 @@ function AdminAddProducts() {
     const imgWindow = window.open(src);
     imgWindow?.document.write(image.outerHTML);
   };
-
   return (
     <div>
       <Navbar />
@@ -65,7 +65,11 @@ function AdminAddProducts() {
             <span style={{color:'blue',fontSize:'25px'}}>Unit Price:</span>
             <input type="text" className='inp unit_inp' placeholder='Pkr' />
         </div>
+        <div className="signup_button_div" style={{margin:'20px auto',textAlign:'center'}}>
+          <button className='get_Started_button' style={{color:'white'}}>Add Product</button>
+        </div>
       </div>
+      <Footer />
     </div>
   )
 }
