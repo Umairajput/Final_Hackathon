@@ -47,7 +47,7 @@ const Login = () => {
           </div>
         </div>
         <div className="get_Started_button_div">
-          <button className='get_Started_button'> <Link to='/login' className='link'  > Sign In</Link> </button>
+          <button className='get_Started_button'> <Link to='/user/home/page' className='link'  > Sign In</Link> </button>
           <p className="already_account"> <Link to='/register' className='link_login' >Don't Have an account? Register</Link> </p></div>
 
       </div>

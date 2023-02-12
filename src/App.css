@@ -157,17 +157,9 @@
 
 .already_account {
   color: var(--blue);
-  --lightGrey: #f3f0ec;
-  --brightGray: #e9ebee;
-  --mainColor: #007EFD;
-  --darkGray: #383e45;
-  --lightGray: rgb(226, 221, 221);
-  --Gray: gray;
-  --yellow: #ffb400;
-  --Dark_blue: #005AB4;
-  --Light_blue: #007EFD;
-  --main_linear_gradient: linear-gradient(129deg, rgba(0, 126, 253, 1) 30%, rgba(0, 90, 180, 1) 50%);
+
 }
+
 /* navbar_styling */
 
 .MuiPaper-root,
@@ -188,7 +180,7 @@
 
 /* admin add item */
 
-.camera_main_div{
+.camera_main_div {
   width: 70%;
   height: 40vh;
   margin: auto;
@@ -197,25 +189,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
+
 /* .admin_camera{
   width: 280px;
   height: 280px;
 } */
-.Add_item_heading{
+.Add_item_heading {
   color: var(--Dark_blue);
   margin-left: 15%;
 }
-.camera_icon{
+
+.camera_icon {
   font-size: 200px !important;
   color: var(--Gray) !important;
 }
-.inputs_div{
+
+.inputs_div {
   width: 70%;
   margin: 20px auto;
 }
-.inp{
+
+.inp {
   width: 100%;
   height: 50px;
   border-radius: 10px;
@@ -223,10 +219,84 @@
   background-color: var(--lightGray);
   font-size: 20px;
 }
-.inp:focus{
+
+.inp:focus {
   outline: none;
 }
-.inp::placeholder{
+
+.inp::placeholder {
   padding-left: 10px;
   font-size: 20px;
+}
+
+/* user_home_page_main_section */
+.user_home_page_main_section {
+  /* background: #d81010; */
+  /* box-shadow: 0px 2px 12px 3px #61B846; */
+  backdrop-filter: blur(25px);
+  padding: 30px;
+  /* border-radius: 35px; */
+}
+
+.user_interface_navbar {
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 25px; */
+}
+.users_heading{
+  /* background-color: aqua; */
+  width: auto;
+}
+.users_heading>h1 {
+  color: var(--mainGreen);
+}
+
+.users_heading>p {
+  margin-top: -10px;
+}
+
+.cart_icon {
+  height: 30px;
+  margin-top: 40px;
+}
+.discount_store_grocery_image_div{
+  /* border-radius: 10px; */
+}
+.discount_store_grocery_image{
+  width: 100%;
+  height: 200px;
+}
+.search_input_div{
+  display: flex;
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-left: 4px;
+  margin-top: 20px;
+  
+
+}
+.search{
+  width: 100%;
+  border: none;
+  background-color: var(--grey);
+  height: 25px;
+  border-radius: 10px;
+}
+.shop_categery{
+  margin-top: 20px;
+}
+.shop_category_heading{
+  font-weight: bold;
+
+}
+.section_of_category{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.categery_box{
+  border: 2px solid var(--mainGreen);
+  padding: 10px;
+  border-radius: 20px;
 }
