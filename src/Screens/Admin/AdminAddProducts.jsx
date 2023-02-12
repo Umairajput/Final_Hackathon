@@ -54,6 +54,20 @@ function AdminAddProducts() {
             <option value="audi">Audi</option>
           </select>
         </div>
+        <div className='inputs_div'>
+          <textarea className='text_area' placeholder='Description this Item' rows="6" cols="50" />
+        </div>
+        <div className='unit_name_div'>
+            <span style={{color:'blue',fontSize:'25px'}}>Unit Name:</span>
+            <input type="text" className='inp unit_inp' placeholder='Pcs./kg/dozen' />
+        </div>
+        <div className='unit_name_div'>
+            <span style={{color:'blue',fontSize:'25px'}}>Unit Price:</span>
+            <input type="text" className='inp unit_inp' placeholder='Pkr' />
+        </div>
+        <div className="signup_button_div" style={{margin:'20px auto',textAlign:'center'}}>
+          <button className='get_Started_button' style={{color:'white'}}>Add Product</button>
+        </div>
       </div>
     </div>
   )
