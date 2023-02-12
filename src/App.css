@@ -384,11 +384,122 @@
 }
 
 /* Shopping  */
+.shpping_div {}
 
-.shopping_proifle>img {
-  width: 50px;
-  float: right;
+.shopping_cart_div {
+  display: flex;
+  justify-content: space-between;
   margin: 20px;
+}
+
+.shopping_proifle {
+  width: 30px;
+  float: right;
+  margin-top: -10px;
+  margin-right: 20px;
+}
+
+.shopping_icon {
+  height: 30px;
+  margin-top: 50px;
+  color: var(--mainGreen);
+}
+
+.shopping_cart_heading>h1 {
+  color: var(--blue);
+
+}
+
+.shopping_cart_heading>p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -20px;
+  color: var(--mainGreen);
+}
+
+.shopping_image {
+  display: flex;
+}
+
+.shopping_image>img {
+  width: 100px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.shopping_image>h3 {
+  font-size: 15px;
+}
+
+.ammount {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.counter_main {
+  display: flex;
+  margin-left: 0px;
+}
+
+.counter_button {
+  height: 30px;
+  margin: 15px;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  /* background-color: var(--mainGreen); */
+  /* color: var(--white); */
+
+}
+
+.number {
+  color: var(--black);
+  background-color: var(--blue);
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.shooping_cart_images_main_div {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.total_amount {
+  color: var(--mainGreen);
+}
+
+.shop_input {
+  margin: 10px;
+}
+
+.order_button_div {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.order_button {
+  border: none;
+  width: 250px;
+  /* padding: 10px 50px 10px 50px; */
+  background-color: var(--mainGreen);
+  font-family: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .text_area {
@@ -430,7 +541,8 @@
   width: 200px;
   height: 200px;
 }
-.category_div{
+
+.category_div {
   width: 70%;
   height: 15vh;
   margin: auto;
@@ -440,6 +552,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 /* Admin_Home */
 
 .admin_home_div {
