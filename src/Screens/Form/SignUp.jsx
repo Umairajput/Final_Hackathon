@@ -55,7 +55,7 @@ const SignUp = () => {
                         <AccountCircleIcon className='form_icon' />
                     </div>
                     <div className="div">
-                        <input type="text" className="input" placeholder='Enter Your Name'
+                        <input type="text" required className="input" placeholder='Enter Your Name'
                             value={name} onChange={(e) => {
                                 setName(e.target.value)
                             }}
@@ -67,7 +67,7 @@ const SignUp = () => {
                         <WifiCallingIcon className='form_icon' />
                     </div>
                     <div className="div">
-                        <input type="Number" className="input" placeholder='Enter Your Number'
+                        <input  required type="Number" className="input" placeholder='Enter Your Number'
                             value={number} onChange={(e) => {
                                 setNumber(e.target.value)
                             }}
@@ -81,7 +81,7 @@ const SignUp = () => {
                         <MarkunreadIcon className='form_icon' />
                     </div>
                     <div className="div">
-                        <input type="Email" className="input" placeholder='Enter Your Email'
+                        <input type="Email" required className="input" placeholder='Enter Your Email'
                             value={email} onChange={(e) => {
                                 setEmail(e.target.value)
                             }}
@@ -95,7 +95,7 @@ const SignUp = () => {
                         <VisibilityOffIcon className='form_icon' />
                     </div>
                     <div className="div">
-                        <input type="Password" className="input" placeholder='Enter Your Password'
+                        <input type="Password" required className="input" placeholder='Enter Your Password'
                             value={password} onChange={(e) => {
                                 setPassword(e.target.value)
                             }}

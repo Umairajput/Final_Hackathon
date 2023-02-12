@@ -40,7 +40,7 @@
 }
 
 .log_saylani_Store>img {
-  width: auto;
+  width: 79%;
 
 }
 
@@ -212,6 +212,7 @@
 .camera_icon {
   font-size: 200px !important;
   color: var(--Gray) !important;
+  margin-left: 20px;
 }
 
 .inputs_div {
@@ -335,16 +336,17 @@
 }
 
 /* description */
+
 .categery_description {
   margin-top: 50px;
- 
+
 
 }
 
 .cateries {
   display: flex;
   justify-content: space-evenly;
- 
+
 }
 
 .cateries_image>img {
@@ -358,9 +360,11 @@
   margin-left: 10px;
   font-size: 10px;
 }
-.Description > p{
+
+.Description>p {
   width: 150px;
 }
+
 .categries_button {
   margin-top: -20px;
 }
@@ -378,7 +382,127 @@
   /* padding: 10px 5px 10px 5px; */
   border-radius: 20px;
   color: var(--white);
-  margin-left: 20px;
+  margin-left: 6px;
+}
+
+/* Shopping  */
+.shpping_div {}
+
+.shopping_cart_div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.shopping_proifle {
+  width: 30px;
+  float: right;
+  margin-top: -10px;
+  margin-right: 20px;
+}
+
+.shopping_icon {
+  height: 30px;
+  margin-top: 50px;
+  color: var(--mainGreen);
+}
+
+.shopping_cart_heading>h1 {
+  color: var(--blue);
+
+}
+
+.shopping_cart_heading>p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -20px;
+  color: var(--mainGreen);
+}
+
+.shopping_image {
+  display: flex;
+}
+
+.shopping_image>img {
+  width: 100px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.shopping_image>h3 {
+  font-size: 15px;
+}
+
+.ammount {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.counter_main {
+  display: flex;
+  margin-left: 0px;
+}
+
+.counter_button {
+  height: 30px;
+  margin: 15px;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  /* background-color: var(--mainGreen); */
+  /* color: var(--white); */
+
+}
+
+.number {
+  color: var(--black);
+  background-color: var(--blue);
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.shooping_cart_images_main_div {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.total_amount {
+  color: var(--mainGreen);
+}
+
+.shop_input {
+  margin: 10px;
+}
+
+.order_button_div {
+  /* margin-left: 50px; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.order_button {
+  border: none;
+  width: 250px;
+  /* padding: 10px 50px 10px 50px; */
+  background-color: var(--mainGreen);
+  font-family: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .text_area {
@@ -420,7 +544,8 @@
   width: 200px;
   height: 200px;
 }
-.category_div{
+
+.category_div {
   width: 70%;
   height: 15vh;
   margin: auto;
@@ -430,6 +555,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 /* Admin_Home */
 
 .admin_home_div {
@@ -485,7 +611,8 @@
 /*Admin Order*/
 
 .admin_order_main_div {
-  margin-left: 30px;
+  margin: auto;
+  width: 70%;
 }
 
 .order_h3 {
@@ -494,8 +621,6 @@
 
 .order_inner_div {
   margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 50px;
   width: auto;
 }
 
@@ -573,4 +698,8 @@
 .footer_inner_div {
   display: block;
   text-align: center;
+}
+
+.active{
+ color: var(--mainGreen) !important;
 }

@@ -8,6 +8,21 @@ import meat from '../../Assets/Images/meat.jpeg'
 import AddIcon from '@mui/icons-material/Add';
 import { UserFooter } from '../../Components/index'
 function UserHome() {
+  let data = [{
+    img: { meat },
+    Name: 'meat',
+    price: 'RS.800-per Kg'
+
+  },
+  {
+    img: { meat },
+    Name: 'meat',
+    price: 'RS.800-per Kg'
+
+  }]
+  const add = () => {
+    alert('add')
+  }
   return (
     <>
       <div className="user_home_page_main_section">
@@ -46,7 +61,38 @@ function UserHome() {
             </div>
           </div>
 
-          <div className="categery_description">
+
+          {
+            data.map((v, i) => {
+              return (
+                <>
+                  <div className="categery_description">
+                    <div className="cateries">
+                      <div className="cateries_image"><img src={meat} alt="" /></div>
+                      <div className="Description">
+                        <h1>{v.Name}</h1>
+                        <p>This is product description </p>
+                        <p> This is abc product description</p>
+
+
+                      </div>
+                      <div className="categries_button">
+                        <p>{v.price}</p>
+                        <buttono onClick={add} ><AddIcon /></buttono>
+                      </div>
+                    </div>
+
+                  </div>
+                </>
+              )
+            })
+          }
+
+
+
+
+
+          {/* <div className="categery_description">
             <div className="cateries">
               <div className="cateries_image"><img src={meat} alt="" /></div>
               <div className="Description">
@@ -58,33 +104,14 @@ function UserHome() {
               </div>
               <div className="categries_button">
               <p>RS.800-per Kg</p>
-                <button><AddIcon/></button>
+                <button ><AddIcon/></button>
               </div>
             </div>
 
-          </div>
-
-
-          <div className="categery_description">
-            <div className="cateries">
-              <div className="cateries_image"><img src={meat} alt="" /></div>
-              <div className="Description">
-                <h1>Meat</h1>
-                <p>This is product description </p>
-                   <p> This is abc product description</p>
-
-
-              </div>
-              <div className="categries_button">
-              <p>RS.800-per Kg</p>
-                <button><AddIcon/></button>
-              </div>
-            </div>
-
-          </div>
+          </div> */}
 
         </div>
-        <UserFooter/>
+        <UserFooter />
       </div>
     </>
   )
