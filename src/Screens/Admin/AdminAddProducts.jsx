@@ -13,7 +13,7 @@ function AdminAddProducts() {
   const [dropDown, setDropDown] = useState('')
   const [description, setDescription] = useState('')
   const [unitName, setUnitName] = useState('')
-  const [unitPrice, setPrice] = useState('')
+  const [itemPrice, setPrice] = useState('')
   const onChange = ({ fileList: newFileList }) => {
     setFileList(newFileList);
   };
@@ -38,7 +38,7 @@ function AdminAddProducts() {
         Category:dropDown,
         Description:description,
         UnitName:unitName,
-        UnitPrice:unitPrice
+        ItemPrice:itemPrice
       });
       setFileList([])
       setItemName('')
@@ -87,7 +87,7 @@ function AdminAddProducts() {
         </div>
         <div className='unit_name_div'>
           <span style={{ color: 'blue', fontSize: '25px' }}>Unit Price:</span>
-          <input value={unitPrice} onChange={(e)=> setPrice(e.target.value)} type="text" className='inp unit_inp' placeholder='Pkr' />
+          <input value={itemPrice} onChange={(e)=> setPrice(e.target.value)} type="text" className='inp unit_inp' placeholder='Pkr' />
         </div>
         <div className="signup_button_div" style={{ margin: '20px auto', textAlign: 'center' }}>
           <button className='get_Started_button' style={{ color: 'white' }} onClick={AddProduct}>Add Product</button>

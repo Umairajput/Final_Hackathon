@@ -8,16 +8,16 @@ import { db } from '../../Firebase/firebase';
 function AdminHome() {
   const [data, setData] = useState([])
   const getData = async () => {
+    let FirebaseData = []
     const q = query(collection(db, "Products"));
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
-      setData([...data, {
-        itemName: doc.data()?.ItemName,
-        imageUrl: doc.data()?.ImageUrl,
-        price: doc.data()?.UnitPrice
-      }])
+      setData([doc.data()])
+      FirebaseData.push(doc.data())
+      setData(FirebaseData)
     });
   }
+  console.log("data==>", data)
   useEffect(() => {
     getData()
   }, [])
@@ -27,17 +27,17 @@ function AdminHome() {
       <div className='admin_home_div'>
         <h3>All Products</h3>
         {
-          data.map((v, i) => {
+          data?.map((v, i) => {
             return(
               <div className='card_main_div'>
               <div className='product_card_div'>
-                <img className='card_img' src={v?.imageUrl} />
+                <img className='card_img' src={v?.ImageUrl} />
                 <div className='product_main_div'>
-                  <p className='product_name'>{v?.itemName}</p>
-                  <p className='product_rate' >1 Kg</p>
+                  <p className='product_name'>{v?.ItemName}</p>
+                  <p className='product_rate' >{v?.UnitName}</p>
                 </div>
               </div>
-              <p className='product_cost'>{v?.price}</p>
+              <p className='product_cost'>{v?.ItemPrice}</p>
             </div>
             )
           })
